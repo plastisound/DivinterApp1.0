@@ -63,7 +63,7 @@ function fetch_and_display_posts()
             var date = posts_array[count][2];
             var image = posts_array[count][3];
 
-            html = html + "<li>" + "<a href='javascript:open_browser(\"" + link + "\")'>" + "<img height='128' width='128' src='" + image + "'>" + "<h2>" + title + "</h2>" + "<p>" + date + "</p></a></li>";
+            html = html + "<li>" + "<a href='javascript:open_browser(\"" + link + "\")'>" + "<h2>" + title + "</h2>" + "<p>" + date + "</p></a></li>";
         }
 
         document.getElementById("posts").innerHTML = html;
